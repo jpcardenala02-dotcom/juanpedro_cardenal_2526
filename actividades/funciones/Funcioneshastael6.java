@@ -11,15 +11,14 @@ public class Funcioneshastael6 {
      */
     // 1
     public static int suma(int num1, int num2) {
-        num1 = sc.nextInt();
-        num2 = sc.nextInt();
+       
         return num1 + num2;
 
     }
 
     public static void ejercicio1() {
         System.out.println("Introduzca dos numeros para sumar: ");
-        int resultado = suma(0, 0);
+        int resultado = suma(2, 2);
         System.out.println("El resultado de la suma es: " + resultado);
 
     }
