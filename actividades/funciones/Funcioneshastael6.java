@@ -9,7 +9,7 @@ public class Funcioneshastael6 {
      * y te devuelva el resultado, posteriormente llámala desde el main y
      * muestra su resultado.
      */
-    // 1
+  
     public static int suma(int num1, int num2) {
        
         return num1 + num2;
@@ -27,7 +27,7 @@ public class Funcioneshastael6 {
      * 2. Realiza un método llamado holaMundo que al ser llamada
      * muestre por consola el mensaje “Hola Mundo!”
      */
-    // 2
+   
     public static void Holamundo() {
         
         System.out.println("hola mundo");
@@ -42,16 +42,16 @@ public class Funcioneshastael6 {
      * que al ser llamada muestre por consola el mensaje “ECO” un
      * número n de veces.
      */
-    // 3
-    public static void eco() {
+    
+    public static void eco(int n) {
+        for (int i = 0; i < n; i++) {
         System.out.println("ECO");
     }
 
     public static void ejercicio3() {
         System.out.println("Introduzca cuantas veces quieres que se repita la palabra ECO");
         int n = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            eco();
+            eco(n);
 
         }
 
@@ -62,10 +62,8 @@ public class Funcioneshastael6 {
      * parámetros de entrada a y b (números enteros) y muestre todos
      * los números pares entre ambos números (a y b inclusive).
      */
-    public static void mostrarIntermedios() {
+    public static void mostrarIntermedios(int a, int b) { 
         System.out.println("introduzca dos numeros para mostrar los pares entre ellos");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
         if (a <= b) {
             for (; a <= b; a++) {
                 if (a % 2 == 0) {
@@ -85,14 +83,14 @@ public class Funcioneshastael6 {
     }
 
     public static void ejercicio4() {
-        mostrarIntermedios();
+        mostrarIntermedios(2,15);
 
     }
 
     /*
      * 5. Realiza una función areaCirculo que reciba un parámetro r y te
      * devuelva el área de un círculo de radio r.
-     * Nota: En un circulo: area = pi * r * 2
+     * Nota: En un circulo: area = pi * r ^ 2
      * Nota: en Java podemos usar el número pi con la constante de la
      * clase Math PI ( se accede con Math.PI )
      */
@@ -100,8 +98,7 @@ public class Funcioneshastael6 {
         System.out.println("Introduzca los cm del radio del circulo para calcular su area");
         r = sc.nextDouble();
 
-        double area = Math.PI * r * 2;
-        return area;
+        return Math.PI * r Math.pow(r,2);
 
     }
 
