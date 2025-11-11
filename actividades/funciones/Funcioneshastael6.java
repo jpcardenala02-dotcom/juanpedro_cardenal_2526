@@ -29,8 +29,8 @@ public class Funcioneshastael6 {
      */
     // 2
     public static void Holamundo() {
-        String hola = "Hola mundo!";
-        System.out.println(hola);
+        
+        System.out.println("hola mundo");
     }
 
     public static void ejercicio2() {
